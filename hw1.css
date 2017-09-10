@@ -1,0 +1,31 @@
+    body{
+        font-size: 1.2em;
+        
+    }
+    p, li{
+        color: dimgrey;
+    }
+    h1{
+        text-align: center;
+        color:darkslategrey;
+    }
+    .subheadingCentral{
+        text-align: center;
+        color: slategrey;
+    }
+    #photo{
+        height: 300px;
+        width: 230px;
+        float: left;
+        clear: left;
+        margin: 0 20px 20px 20px;
+    }
+    p:first-of-type{
+        clear: left;
+        display: inline;
+        margin: 0;
+    }
+    p{
+        clear: left;
+        margin: 0 20px;
+    }
