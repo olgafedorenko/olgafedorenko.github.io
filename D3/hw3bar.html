@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Homework 3</title>
+     <meta charset="utf-8">
+   <script src="files/d3.min.js"></script> 
+      
+      <style>
+          h2 {text-align:center;}
+      </style>
+  </head>
+  <body>
+    <h2>Students in CNIT 132</h2>
+   <script>
+	  d3.json("./hw3data.json", function (data) {
+          console.log(data);
+         /*var canvas = d3.select('body').append('svg')
+          
+          canvas.selectAll('rect')
+			   .attr("width", function (d) { return d.students * 5; })
+			   .attr("height", 40)
+               .style('background', '#2635D2');
+          
+          //canvas.selectAll(...........
+          */
+    })
+	  
+   </script>
+  </body>
+</html>
+ 

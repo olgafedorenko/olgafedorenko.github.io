@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Homework 3</title>
+     <meta charset="utf-8">
+   <script src="files/d3.min.js"></script> 
+<style>
+    .back-color {
+    background-color: #d5f4e6;
+}
+      
+</style>
+  </head>
+  <body>
+ 
+    <script>
+        var data = [1, 2, 3, 4, 5, 6];
+        var c10 = d3.scaleOrdinal(d3.schemeCategory10);
+        
+        
+        var scale = d3.scaleLinear()
+           .domain([1, 6])
+           .range([5, 500])
+        
+        
+        var svg = d3.select("body").append("svg")
+           .attr("width", 600)
+           .attr("height", 250)
+           .attr("class", "back-color")
+            .append('g');
+        
+            svg.append("svg:title").text('This is some information about whatever').attr("fill", 'black')
+        //.attr("x", 50)     
+        //.attr("y", 150)
+         
+        
+                //.attr('fill', 'black')
+        var yourGElement = svg.append("svg:g").attr("transform", "translate(40,0)");
+
+yourGElement.append("svg:title").text("Your tooltip info");
+            /*
+        svg.selectAll("rect")
+            .data(data)
+            .enter().append("rect")
+            .attr("x", function (d) { return scale(d); })
+            .attr("y", 30)
+            .attr("width", 60 )
+            .attr("height", 60)
+            .attr("fill", 'red')
+            
+            .style("stroke-width", 4)
+            .style("stroke", "black")
+        
+            .attr("fill", c10 );
+        
+        
+           */
+        
+    </script>
+  </body>
+</html>
+ 
