@@ -21,7 +21,7 @@
 		.attr("height", 800);
           
           canvas.selectAll('rect')
-                .data(mydata)
+                .data(data)
                 .enter()
                 .append('rect')
                  .style('fill', 'blue') 
@@ -29,7 +29,7 @@
                 .attr("height", 40)
                 .attr('y', function(d, i) { return i * (40 + 7); })
 	canvas.selectAll("text")
-		.data(mydata)
+		.data(data)
 		.enter().append("text")
 		.text(function(d) { return d.term+ " w/ "+ d.students + " students";})
 		.attr("class", "text")
