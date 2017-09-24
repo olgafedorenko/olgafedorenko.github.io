@@ -7,6 +7,7 @@
 <style>
     .back-color {
     background-color: #d5f4e6;
+        
 }
       
 </style>
@@ -27,23 +28,23 @@
            .attr("width", 600)
            .attr("height", 250)
            .attr("class", "back-color")
-            .append('g');
         
-            svg.append("svg:title").text('This is some information about whatever').attr("fill", 'black')
-        //.attr("x", 50)     
-        //.attr("y", 150)
-         
+            .append('g')
         
-                //.attr('fill', 'black')
-        var yourGElement = svg.append("svg:g").attr("transform", "translate(40,0)");
-
-yourGElement.append("svg:title").text("Your tooltip info");
-            /*
+           
+            svg.append("text")
+        .attr("x", (600 / 2))             
+        .attr("y", 30)
+        .attr("text-anchor", "middle")  
+        .style("font-size", "24px") 
+        .style("font-weight", "bold")
+        .text(" Working with D3");
+        
         svg.selectAll("rect")
             .data(data)
             .enter().append("rect")
             .attr("x", function (d) { return scale(d); })
-            .attr("y", 30)
+            .attr("y", 80)
             .attr("width", 60 )
             .attr("height", 60)
             .attr("fill", 'red')
@@ -52,9 +53,10 @@ yourGElement.append("svg:title").text("Your tooltip info");
             .style("stroke", "black")
         
             .attr("fill", c10 );
+     
         
-        
-           */
+
+           
         
     </script>
   </body>
