@@ -11,17 +11,14 @@
     $("#animation_1a").click(function(){
         $("#h1, #photo").animate({
             fontSize : '3em',
-            color:"yellow",  
-            'borderWidth': '24px',
-            'borderColor': 'black'
-            
+            color:"yellow",     
         },3000)
+        
+       $("#photo").css({borderColor:"grey",borderStyle:"solid",borderWidth : '10px'});
         
         $("#h1, #photo").animate({
              fontSize : '2em',
              color:"	#483D8B",
-             'borderWidth': '0.1px',
-             'borderColor': 'grey',
         },3000)
         
     })
