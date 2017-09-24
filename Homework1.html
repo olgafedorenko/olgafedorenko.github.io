@@ -2,13 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="First homework in class CNIT133M.">
     <title>Homework 1</title>
     <link rel="stylesheet" href="hw1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+    $("#animation_1a").click(function(){
+        $("#h1, #photo").animate({
+            fontSize : '3em',
+            color:"yellow",  
+            'borderWidth': '24px',
+            'borderColor': 'black',
+            src:'red_hat.jpg'
+        },3000)
+        
+        $("#h1, #photo").animate({
+             fontSize : '2em',
+             color:"	#483D8B",
+             'borderWidth': '0.1px',
+             'borderColor': 'grey',
+        },3000)
+        
+    })
+        })
+    
+    </script>
 </head>
 <body>
-    <h1>CNIT 133M-Mobile Web w/HTML, CSS &amp; JS</h1>
-     <img id="photo" alt="Olga" src="images/IMG_20160724_162130.jpg">
+    <h1 id="h1">CNIT 133M-Mobile Web w/HTML, CSS &amp; JS</h1>
+     <img id="photo" alt="Olga" src="IMG_20160724_162130.jpg">
+    
     <p>
         Hi everyone, <br> My name is Olga. This is my third semester at CCSF and I'm doing certificate in Web application Programming.
         <br><br>
@@ -17,10 +41,13 @@
 
         
     </p>
+    
    
     <p>
+        
         I decided to take it to learn more about how to build hybrid apps and why sometimes it's useful that native apps.
     </p>
+    
     <h2 class="subheadingCentral">Technologies for this class </h2>
     <ul>
         <li>HTML</li>
@@ -46,6 +73,7 @@
         </li>
     
     </ul>
+    <button id="animation_1a"> Start animation</button>
     
 </body>
 </html>
