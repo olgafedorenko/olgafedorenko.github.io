@@ -23,11 +23,12 @@
            .domain([1, 6])
            .range([5, 500])
         
-        
+        d3.select("body")
+            .attr("class", "back-color")
+      
         var svg = d3.select("body").append("svg")
            .attr("width", "100%")
            .attr("height", "100%")
-           .attr("class", "back-color")
            .append('g')
         
            
