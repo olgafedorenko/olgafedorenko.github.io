@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Backbone Homework</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<meta name="description" content="information about users with Backbone.js">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/style.css" /> 
+</head>
+<body>
+	<div id="content">
+	<h1>Information about users</h1>
+	<form id="addPerson">
+			<input type="text" id="name" 
+				maxlength="20" placeholder="Name of the person" required>
+			<input type="number"  id="age"  min="18" max="110" placeholder="Age">
+			<input type="text" id="occup" maxlength="50" placeholder="Occupation">
+			<select name="fm">
+				<option id="female" value="female">Female</option>
+				<option id="male" value="male">Male</option>
+			  </select>
+			<input type="submit" value="Add Person">
+	</form>
+	
+<script id="personTemplate" type="text/template">
+	<span><strong><%= name %></strong> (<%= age %> <%= gender %>) - <%= occupation %></span> 
+	<button class="edit">Edit</button>
+	<button class="delete">Delete</button>
+</script>
+
+<script src="./js/underscore.js"></script>
+<script src="./js/jquery.js"></script>
+<script src="./js/backbone.js"></script>
+<script src="./js/main.js"></script>
+	</div>
+</body>
+</html>

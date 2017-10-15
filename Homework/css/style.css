@@ -1,0 +1,26 @@
+#name:focus, #age:focus, #occup:focus {
+    background-color:bisque
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+h1{
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+html{
+    background-color: lightgray;
+    height: 100%;
+}
+#addPerson{
+    margin: 0 60px ;
+}
+
