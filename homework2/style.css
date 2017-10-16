@@ -149,6 +149,10 @@
 		.col-right, .sidebar-left{
 			padding: 10px 10px;	
 		}
+		#footer{
+			margin:0 auto;
+			padding:15px;
+		}
 	}
 
 	/*Extra Credit */
