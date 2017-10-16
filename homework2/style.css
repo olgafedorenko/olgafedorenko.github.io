@@ -86,6 +86,8 @@
 	}
 				
 	#footer{
+		margin:0 auto;
+		padding:15px;
 		background-color:#c4d5d9;
 		text-align:center;
 	}
@@ -127,10 +129,7 @@
 		.sidebar-left, .col-right {
 		    margin: 10px 10px 0 0;
 		}
-		#footer{
-			margin:0 auto;
-			padding:15px;
-		}
+		
 		.title{
 			position: relative;
 		}	
@@ -138,7 +137,7 @@
 	img {max-width:100%;} 
 	@media screen and (max-width:480px) {
 	
-		body,  #footer, .content, #header {
+		body, .content, #header {
 			width: 100%;
 			margin: 0;
 			padding: 0;
@@ -149,6 +148,7 @@
 		.col-right, .sidebar-left{
 			padding: 10px 10px;	
 		}
+		
 	}
 
 	/*Extra Credit */
