@@ -86,8 +86,6 @@
 	}
 				
 	#footer{
-		margin:0 auto;
-		padding:15px;
 		background-color:#c4d5d9;
 		text-align:center;
 	}
@@ -118,9 +116,7 @@
 		.col-right{
 			float:right;
 			width:660px;
-			
-			}
-			
+		}	
 		.sidebar-left{
 			float:left;
 			width: 200px;
@@ -132,7 +128,11 @@
 		
 		.title{
 			position: relative;
-		}	
+		}
+		#footer{
+			margin:0 auto;
+			padding:15px;
+		}
 	}
 	img {max-width:100%;} 
 	@media screen and (max-width:480px) {
@@ -147,6 +147,10 @@
 		}
 		.col-right, .sidebar-left{
 			padding: 10px 10px;	
+		}
+		#footer{
+			margin:0 auto;
+			padding:15px;
 		}
 		
 	}
