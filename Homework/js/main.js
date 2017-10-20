@@ -66,17 +66,15 @@ App.Views.Person = Backbone.View.extend({
 	
 	editPerson: function(){
 		var newName = prompt("Please enter the new name", this.model.get('name'));
-		if (!newName) return;
-		this.model.set('name', newName);
-		var newAge = prompt("Please enter the new age", this.model.get('age'));
-		if (!newAge) return;
-		this.model.set('age', newAge);
+			if (!newName) return;
+		var newAge = prompt("Please enter the new age",this.model.get('age')); 
+       			if (!newAge) return;                   
 		var newOccupation = prompt("Please enter the new occupation", this.model.get('occupation'));
-		if (!newOccupation) return;
-		this.model.set('occupation', newOccupation);
+			if (!newOccupation) return;
 		var newGender = prompt("Please enter the gender", this.model.get('gender'));
-		if (!newGender) return;
-		this.model.set('gender', newGender);
+        		if (!newGender) return;
+		
+        	this.model.set({ name: newName, age: newAge, occupation: newOccupation, gender: newGender });
 	},
 	
 	DestroyPerson: function(){
