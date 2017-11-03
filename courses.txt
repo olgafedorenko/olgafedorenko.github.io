@@ -1,0 +1,11 @@
+[
+   {"Name": "CNIT 131H" , "Description" : "Introduction to HTML and CSS"},
+   {"Name": "CNIT 131" , "Description" : "Internet and Beginning HTML and CSS"},
+   {"Name": "CNIT 132" , "Description" : "Intermediate HTML and CSS"},
+   {"Name": "CNIT 132A" , "Description" : "Advanced HTML and CSS"},
+   {"Name": "CNIT 132S" , "Description" : "SEO and Analytics for Web Dev"},
+   {"Name": "CNIT 133" , "Description" : "JavaScript"},
+   {"Name": "CNIT 133M" , "Description" : "Mobile Web Dev with HTML, CSS, JS"},
+   {"Name": "CNIT 133A" , "Description" : "JavaScript Libraries and Frameworks"},
+   {"Name": "CNIT 134" , "Description" : "Server-Side Tech for Web Dev"}
+]

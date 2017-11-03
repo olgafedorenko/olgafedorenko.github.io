@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Including another file</title>
+	  <meta charset="utf-8">
+	  <meta name="description" content="Using ng-include to include external file">
+	  <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		  <style>
+	    table {border: 2px solid black; border-collapse: collapse; }
+		td {border: 1px solid black;}
+		tr:nth-child(even) { background-color: cyan; }
+	  </style>
+   </head>
+   <body ng-app="incApp">
+   <div ng-controller="incController">
+    <h1> Courses Offered by CNIT</h1>
+		<div ng-include="'table.html'"></div>
+   </div>
+   <script>
+
+    var incApp = angular.module('incApp',[]);
+    incApp.controller('incController', function($scope, $http) {
+	    var url = "courses.txt";
+		$http.get(url).then( function(response) {
+		   $scope.courses = response.data;
+		});
+	});
+</script>
+</body>
+</html>
