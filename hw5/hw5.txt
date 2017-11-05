@@ -1,0 +1,56 @@
+ [{
+ 		"title": "Mega Bloks Elephant Parade Building Kit (25 Piece)",
+ 		"price": 19.99,
+ 		"image": "images/elephant.jpg",
+ 		"desc": "Play two ways when you wheel out with a colorful elephant pull toy and a parade of buildable animals! Scoot around when you pull the elephant by its string and watch the blocks spin inside the big tumbler. Then discover all the benefits of classic construction play when you use the blocks to build up motor skills as you learn to grasp and stack."
+ 	},
+ 	{
+ 		"title": "3D Glowing Drawing Board",
+ 		"price": 21.99,
+ 		"image": "images/drawing_board.jpg",
+ 		"desc": "This handy-dandy 3D Drawing Board takes the experience of 3D to a new level! Your child will be able to experience first hand 3D Art creation! It`s simple: Lay down the drawing board, put the stand on the back side of the transparent board, then start drawing."
+ 	},
+ 	{
+ 		"title": "Woodcraft 3D Puzzle Assemble and Paint Toy Kit, Triceratops)",
+ 		"price": 10.99,
+ 		"image": "images/triceratops.jpg",
+ 		"desc": "This puzzle is for children 6 & up. The pieces come in sheets that you have to pop out. If your kid is younger than 6 you might want stay right with them and help them or only let them do the bigger pieces. For children younger than 6, please be very careful about the coating. Please do not eat paint, although it is non-toxic."
+ 	},
+ 	{
+ 		"title": "Play-Doh 10-Pack of Colors",
+ 		"price": 7.99,
+ 		"image": "images/play_doh.jpg",
+ 		"desc": "With 10 different colors of modeling compound to play with, this is a case of creative possibilities! It’s a rainbow assortment of compound colors that lets you create just about anything you can imagine. Press, smoosh, squish, roll, squeeze and shape – with Play-Doh modeling compound, the only limit is your imagination! Play-Doh and all related characters are trademarks of Hasbro."
+ 	},
+ 	{
+ 		"title": "Play-Doh Play Store Table",
+ 		"price": 25.99,
+ 		"image": "images/play_table.jpg",
+ 		"desc": "Enter the imagination zone! With this handy table, kids have a place to play and store their Play-Doh cans and tools. This all-in-one creative activity table is great for kids to explore and share the silly fun together. With built-in half-molds, 8 Play-Doh cans, and more than 25 tools, there`s plenty of hands-on play to go around! Make basic shapes and animals with the cutters, whip up some Play-Doh ice cream treats with the extruder and dishes, and so much more. When the fun is done for the day, drop the tools and cans into the hinged doors for easy storage! Hasbro, Play-Doh and all related properties are trademarks of Hasbro."
+ 	},
+
+ 	{
+ 		"title": "KidKraft Vintage Kitchen",
+ 		"price": 99.99,
+ 		"image": "images/kitchen.jpg",
+ 		"desc": "Our Vintage Kitchen in White lets kids pretend they are cooking big feasts for the whole family. With its close attention to detail and interactive features, this adorable kitchen would make a great gift for any of the young chefs in your life. Doors open and close. Oven knobs click and turn. Cordless phone. Removable sink for easy cleanup."
+ 	},
+ 	{
+ 		"title": "Green Toys Fire Truck",
+ 		"price": 21.11,
+ 		"image": "images/truck.jpg",
+ 		"desc": "Make way for our newest product–the world’s emergency vehicle. Made from 100% recycled plastic milk containers. No metal axles. Sturdy roof ladder pivots vertically and rotates 360 degrees. Two removable side ladders. All Green Toys products are 100% made in the USA. To be more specific, they are produced in California, a state known for strict toy safety and environmental laws. All Green Toys products are packaged in recycled corrugated boxes with no plastics, cellophane or twist-ties, and are 100% recyclable. Green Toys products are tested by nationally recognized, independent, third-party labs (located, yes, in the USA.) They contain no traceable amounts of Phthalates or BPA."
+ 	},
+ 	{
+ 		"title": "LEGO DUPLO Town Big Construction Site",
+ 		"price": 39.99,
+ 		"image": "images/lego.jpg",
+ 		"desc": "Little construction workers will love these 3 buildable machines. Clear the site with the tracked bulldozer, before tipping new building supplies from the truck. Then use the crane with its claw and posable arm to hoist bricks and construct a building. LEGO DUPLO large building blocks are specially designed to be safe for little hands. Includes 3 construction worker DUPLO figures to encourage lots of role-play fun."
+ 	},
+ 	{
+ 		"title": "MPrincess Castle Tent",
+ 		"price": 27.99,
+ 		"image": "images/tent.jpg",
+ 		"desc": "Pink Princess Party Play Tent is an adorable gift for all girls, and perfect for birthdays, parties, home decoration or outdoor fun. Kids will fall in love with this fantastic princess tent and feel like the princess she is with this beautiful Fairy Tale Tent. Suitable for indoor and outdoor use, and the tent can add a special feel to any birthdays, parties and Street Fairs.This tent is all you need and more! "
+ 	}
+ ]
