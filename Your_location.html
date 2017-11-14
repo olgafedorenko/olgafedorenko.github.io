@@ -5,9 +5,8 @@
         <meta charset="utf-8" >
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="st_5.css" rel="stylesheet" type="text/css" />
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	
-        <script src="https://maps.google.com/maps/api/js?sensor=true" > </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALEoigpMxIHCMqdgx5KKTGiv0W4v-1JAI&callback=initMap" > </script>
         <script type="text/javascript" >
 
             window.onload = getLocation;
@@ -51,9 +50,10 @@
                 center: googleLatAndLong,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
             };
+                var key="AIzaSyALEoigpMxIHCMqdgx5KKTGiv0W4v-1JAI"
 
                 var mapDiv = document.getElementById( 'map' );
-                map = new google.maps.Map( mapDiv, mapOptions );
+                map = new google.maps.Map( mapDiv, mapOptions) ;
                 console.log(map)
                 console.log(map.rmiUrl)
 
