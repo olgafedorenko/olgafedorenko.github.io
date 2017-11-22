@@ -1,0 +1,215 @@
+
+
+/*  Common */
+body, html{
+    margin:0;
+    padding: 0;
+    font-family: Roboto;
+    background-color:#383838;
+}
+
+main{
+    background-color: 	#505050;
+    margin: 0 auto;
+    color:white;
+}
+
+/* Common section CSS */
+header,  footer{
+    position: relative;
+    background-color: #ffffff;
+    margin: 0
+}
+
+
+
+
+#btn-log_in a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+
+}
+#btn-log_in:hover{
+    background-color: white;
+    color: #fff;
+}
+.btn-primary{
+    background-color: #505050;
+    left: 50%;
+    margin-left: 40%; 
+}
+#contact_us{
+    text-transform: uppercase;
+    text-align: center;
+}
+#contact_us_text{
+    text-align: center;
+}
+hr{
+    color:lightgray;
+}
+#s_network{
+    margin: 0 auto;
+    width: 40%;
+}
+#s_network a{
+    padding-left: 10px;
+}
+#title{
+    font-size: 1.6em;
+}
+main h3{
+    text-align: center;
+    color:white;
+}
+address{
+    text-align: center;
+}
+#toy{
+    width: 30%;
+    height: 30%;
+}
+.panel-group{
+    color:black;
+}
+.panel-warning>.panel-heading {
+    text-align: center;
+    color: white;;
+    background-color: #888888;
+    border-color: #faebcc;
+}
+.panel-body {
+    display: flex;
+}
+.panel-body img{
+    width: 30%;
+    height: 30%;
+}
+@media screen and (max-width: 480px) {
+    footer{
+        display: none;
+    }
+}
+@media screen and (min-width: 481px) {
+    main{
+    background-color: 	#505050;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    color:white;
+}
+    
+/*  Footer */
+footer{
+    height: 306px;
+    background-size: cover;
+    background-color: #222;
+    color:#9d9d9d;
+}
+.image_social_group{
+    position: absolute;
+    width: 72%;    
+    display: flex;
+    margin: 245px 132px 37px 132px;
+}
+.hr_style{
+    position: absolute;
+    margin:220px 0 89px 0;
+    border-top: 0.5px solid #e4e7ec;; 
+    width:100%
+}
+/* text footer */
+
+#copyright{
+    font-size: 0.75rem;
+    text-align: left;
+    margin-right: auto;
+    
+}
+.social_group{
+    width: 16px;
+    height: 16px;
+    margin-right: 21px;
+    object-fit: contain;
+}
+#subscribe_title{
+    font-size: 0.87rem;
+    text-align: left;
+}
+
+/* form footer */
+
+#subscribe_input{
+    width: 309px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: solid 0.5px #e4e7ec;
+    margin: 0;
+}
+form{
+    position: relative;
+}
+#subscribe{
+    position: absolute;
+    margin: 30px 131px 200px 60%;
+}
+#subscribe_input::placeholder, .email-text::placeholder{
+    font-size: 0.87rem;
+    text-align: left;
+    color: #a5adbb;
+    padding: 16px;
+}
+#subscribe_button{
+    width: 60px;
+    height: 43px;
+    border: none;
+    border-radius: 3px;
+    background-color: #3b5998;
+    border: solid 0.5px #e4e7ec;
+    font-size: 0.87rem;
+    font-weight: 500;
+    text-align: left;
+    color: #ffffff;
+    padding: 0 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* navigation footer */
+
+.footer-navigation {
+    width:52%;
+    position: absolute;
+    margin: 30px 0 127px 131px;
+}
+.footer-links-holder {
+    width: 30%;
+    position: relative;
+    float: left;
+    margin: 0;
+} 
+.footer-nav {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+.footer-nav li{
+    padding-top:13px;
+}
+.footer-nav li a{
+    font-size: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+      color:#9d9d9d;
+
+}
+.footer-title{
+    font-size: 0.83rem;
+    font-weight: 900;
+    text-align: left;
+    text-transform: uppercase;
+}
+}
