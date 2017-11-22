@@ -17,7 +17,7 @@ main{
 }
 
 /* Common section CSS */
-header,  footer{
+   footer{
     position: relative;
     background-color: #ffffff;
     margin: 0
@@ -95,6 +95,7 @@ address{
     footer{
         display: none;
     }
+   
 }
 @media screen and (min-width: 481px) {
     main{
