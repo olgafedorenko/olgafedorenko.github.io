@@ -130,7 +130,6 @@
                     directionsService.route({
                          origin:googleLatAndLong,
                          destination: new google.maps.LatLng(37.790178, -122.400437),
-
                         travelMode: google.maps.TravelMode.DRIVING
                     }, function(response, status) {
                         if (status == google.maps.DirectionsStatus.OK) {
@@ -147,14 +146,13 @@
                  }} 
             
              
-
                  
                  
                
         </script>
 </head>
 
-<body onload="addMarker()">
+<body onload="getLocation()">
   <header>
             <nav class="navbar navbar-inverse navbar-fixed-top">
               <div class="container-fluid">
@@ -234,4 +232,3 @@
 </body>
 
 </html>
-
