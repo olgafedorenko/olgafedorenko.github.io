@@ -80,7 +80,7 @@
          */
              function addMarker ( map, coords, title, content, googleLatAndLong ) {
             
-                /* var markers=[
+                 var markers=[
                      ['ABCToys', 37.790178, -122.400437],
                      ['my current location', coords.latitude, coords.longitude]
                  ]
@@ -99,7 +99,7 @@
                 });
                     
                 // Allow each marker to have an info window
-                     /*google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                     google.maps.event.addListener(marker, 'click', (function(marker, i) {
                           return function() {
                             infowindow.setContent(markers[i][0]);
                             infowindow.open(map, marker);
