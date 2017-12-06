@@ -95,6 +95,11 @@ address{
     footer{
         display: none;
     }
+    #map{
+        width: 360px;
+        height: 400px;
+        color: black;
+    }
    
 }
 @media screen and (min-width: 481px) {
@@ -107,6 +112,12 @@ address{
 }
     .panel-body p{
         font-size: 1.34em;
+    }
+    
+    #map {
+    width: 600px;
+    height: 400px;
+            color:black;
     }
     
 /*  Footer */
@@ -167,7 +178,7 @@ form{
 
 #subscribe_button{
     width: 60px;
-    height: 40px;
+    height: 43px;
     border: none;
     border-radius: 3px;
     background-color: #3b5998;
