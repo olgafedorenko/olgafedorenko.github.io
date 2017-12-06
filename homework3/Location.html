@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="UTF-8" />
-    <meta name="description" content="ABS toys">
+    <meta name="description" content="Location of ABS toys">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
     <title>ABC Toys</title>
@@ -22,7 +22,136 @@
     
     <style>
         body{height: 80%;}
+        #map {
+    width: 600px;
+    height: 400px;
+            color:black;
+}
     </style>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALEoigpMxIHCMqdgx5KKTGiv0W4v-1JAI" > </script>
+        <script type="text/javascript" >
+            window.onload = getLocation;
+            /*
+            Here we will check the browser supports the Geolocation API; if exists, then we will display the location
+            */
+            var geo = navigator.geolocation;
+            function getLocation() {
+                if( geo ) {
+                    geo.getCurrentPosition( displayLocation );
+                } else {
+                    alert( "Oops, Geolocation API is not supported" );
+                }
+            }
+        /*
+        This function displays the latitude and longitude when the browser has a location.
+        */
+            function displayLocation( position ) {
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                var div = document.getElementById( 'location' );
+                div.innerHTML = "You are at Latitude: " + latitude + ", Longitude: " + longitude;
+                displayMap( position.coords );
+            }
+        // Global Variable that will hold Google Map
+            var map;
+            /*
+            This method is used to display Google Map.
+            */
+            function displayMap( coords ) {
+                var googleLatAndLong = new google.maps.LatLng( coords.latitude, coords.longitude );
+                
+                var mapOptions = {
+                zoom: 14,
+                center: googleLatAndLong,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+            };
+                var key="AIzaSyALEoigpMxIHCMqdgx5KKTGiv0W4v-1JAI"
+                var mapDiv = document.getElementById( 'map' );
+                map = new google.maps.Map( mapDiv, mapOptions) ;
+                console.log(map)
+                //console.log(map.rmiUrl)
+                var title = 'Your Location';
+                var content = 'You are here: ' + coords.latitude + ', ' + coords.longitude;
+                addMarker( map, coords, title, content, googleLatAndLong );
+        }
+            /* 
+         This function creates a marker, an InfoWindow and add a click handler on the Marker.
+         */
+             function addMarker ( map, coords, title, content, googleLatAndLong ) {
+            
+                /* var markers=[
+                     ['ABCToys', 37.790178, -122.400437],
+                     ['my current location', coords.latitude, coords.longitude]
+                 ]
+                
+                 //var marker = new google.maps.Marker( markerOptions );
+              
+                 var infowindow = new google.maps.InfoWindow();
+                 for (i = 0; i < markers.length; i++) {
+                    var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+               // bounds.extend(position);
+                    marker = new google.maps.Marker({
+                    position: position,
+                    map: map,
+                    title: markers[i][0]
+                        
+                });
+                    
+                // Allow each marker to have an info window
+                     /*google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                          return function() {
+                            infowindow.setContent(markers[i][0]);
+                            infowindow.open(map, marker);
+                                   
+                          }
+                          console.log(infowindow.setContent(markers[i][0]))
+                        })(marker, i));
+                     
+                 
+                    */
+                      var directionsService = new google.maps.DirectionsService();
+                    var directionsDisplay = new google.maps.DirectionsRenderer();
+                     
+                     
+                      directionsService.route({
+                         origin:googleLatAndLong,
+                         destination: new google.maps.LatLng(37.793185, -122.395807),
+                        travelMode: google.maps.TravelMode.DRIVING
+                    }, function(response, status) {
+                        if (status == google.maps.DirectionsStatus.OK) {
+                            directionsDisplay.setDirections(response);
+                            directionsDisplay.setMap(map);
+                          } else {
+                            window.alert('Directions request failed due to ' + status);
+                          }
+                    });
+             /*
+                    directionsService.route({
+                         origin:googleLatAndLong,
+                         destination: new google.maps.LatLng(37.790178, -122.400437),
+
+                        travelMode: google.maps.TravelMode.DRIVING
+                    }, function(response, status) {
+                        if (status == google.maps.DirectionsStatus.OK) {
+                            directionsDisplay.setDirections(response);
+                            directionsDisplay.setMap(map);
+                          } else {
+                            window.alert('Directions request failed due to ' + status);
+                          }
+                    });
+                     
+                */     
+            
+            
+                 
+            
+             }
+
+                 
+                 
+               
+        </script>
 </head>
 
 <body>
@@ -40,8 +169,10 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                   <ul class="nav navbar-nav">
                      <li ><a href="index.html">Home</a></li>
+                      <li><a href="toys.html">Our toys</a></li>
                     <li><a href="Location.html">Location</a></li>
                     <li><a href="contact.html">Contact us</a> </li>
+                      <li><a href="offline.html">Offline</a> </li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -52,7 +183,17 @@
             </nav>
         </header>
     <main>
-    <h3>“When we open our store, we will let you know our location here even with directions from your place to it!!!”</h1>
+
+        <div class="container" >
+            <h3> Find where we are</h3>
+
+            <div id="location" >
+                You are at Latitude: _________, Longitude: _________
+            </div>
+
+            <div id="map" > </div>
+        </div>
+
     </main>
     <footer>
             
