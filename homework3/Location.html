@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -30,7 +30,7 @@
     </style>
     
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqDDtabF9_BD4KIdAldvCkwpGiKdLWiKI" > </script>
-        <script type="text/javascript" >
+        <script>
             window.onload = getLocation;
             /*
             Here we will check the browser supports the Geolocation API; if exists, then we will display the location
@@ -107,8 +107,8 @@
                           }
                           console.log(infowindow.setContent(markers[i][0]))
                         })(marker, i));
-                     
-                 */
+                   */  
+                 
                     
                       var directionsService = new google.maps.DirectionsService();
                     var directionsDisplay = new google.maps.DirectionsRenderer();
@@ -126,29 +126,9 @@
                             window.alert('Directions request failed due to ' + status);
                           }
                     });
-             /*
-                    directionsService.route({
-                         origin:googleLatAndLong,
-                         destination: new google.maps.LatLng(37.790178, -122.400437),
-                        travelMode: google.maps.TravelMode.DRIVING
-                    }, function(response, status) {
-                        if (status == google.maps.DirectionsStatus.OK) {
-                            directionsDisplay.setDirections(response);
-                            directionsDisplay.setMap(map);
-                          } else {
-                            window.alert('Directions request failed due to ' + status);
-                          }
-                    });
-                     
-                */     
-            
-            
+   
                  }
-            
-             
-                 
-                 
-               
+        
         </script>
 </head>
 
@@ -224,9 +204,9 @@
             <hr class="hr_style"/>
             <div class="image_social_group">
                 <p id="copyright">© ABC Toys. All rights reserved</p>
-                <a href="https://www.facebook.com/toysrus/"><img src="images/facebook/facebook.png" alt="facebook" srcset="images/facebook/facebook@2x.png, images/facebook/facebook@3x.png" class="social_group"></a>
-                <a href="#"><img src="images/twitter/twitter.png" alt="twitter" srcset="images/twitter/twitter@2x.png, images/twitter/twitter@3x.png" class="social_group"></a>
-                <a href="#"><img src="images/instagram/instagram.png" alt="instagram" srcset="images/instagram/instagram@2x.png, images/instagram/instagram@3x.png" class="social_group"></a>  
+                <a href="https://www.facebook.com/toysrus/"><img src="images/facebook/facebook.png" alt="facebook" ></a>
+                <a href="#"><img src="images/twitter/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="images/instagram/instagram.png" alt="instagram" ></a>  
             </div>
         </footer>
 </body>
