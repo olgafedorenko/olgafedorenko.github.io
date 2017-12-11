@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- React -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+      <!-- <script src="https://fb.me/react-15.2.1.min.js"></script>
+      <script src="https://fb.me/react-dom-15.2.1.min.js"></script> -->
+	<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.js"></script>  -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+        <title>Changing Style</title>
+        <style>
+            .black{
+                font-size: 1.1em;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+<body>
+   <div id="main"></div>
+<script type="text/babel">
+var App = React.createClass({
+  getInitialState: function() {
+    return {
+      name: "user",
+        date:new Date()
+    };
+  },
+
+  handleNameChange: function (nameChange) {
+    this.setState({ name: nameChange });
+  },
+
+  componentDidMount() {
+    this.timerID = setInterval(
+      () => this.tick(),
+      1000
+    );
+  },
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  },
+
+  tick() {
+    this.setState({
+      date: new Date()
+    });
+  },
+  render: function() {
+
+    return (
+      <div>
+        <h1>Lab Check in</h1>
+        <label>Choose a name to check in &nbsp;&nbsp;&nbsp;
+          <ColorSel value={this.state.name} onNameChange={this.handleNameChange}/>
+            <p>Hello, <span className="black">{this.state.name}</span>, you have now checked in at {this.state.date.toTimeString()} </p>
+        </label>
+      </div>
+    )
+  }
+});
+
+// ColorSel component
+var ColorSel = React.createClass({
+  propTypes: {
+    value: React.PropTypes.string.isRequired,
+    onNameChange: React.PropTypes.func
+  },
+  
+  handleChange: function(e) {
+    e.preventDefault();
+    var nameChange = e.target.value
+    if (this.props.onNameChange)
+      this.props.onNameChange(nameChange);
+  },
+  
+  render: function() {
+    return (
+      <select value={this.props.value} onChange={this.handleChange}>
+	    <option >Select a name</option>
+        <option value="Olga">Olga</option>
+        <option value="Yana">Yana</option>
+        <option value="Farah">Farah</option>
+        <option value="Nick">Nick</option>
+        <option value="Natalia">Natalia</option>
+        <option value="Vova">Vova</option>	
+        <option value="Anton">Anton</option>
+        <option value="Nastya">Nastya</option>
+        <option value="Vika">Vika</option>
+        <option value="Julia">Julia</option>
+        <option value="Tanya">Tanya</option>		
+      </select>
+    )
+  }
+});
+
+ReactDOM.render(<App/>, document.querySelector('#main'));
+
+</script>
+</body>
+</html>
